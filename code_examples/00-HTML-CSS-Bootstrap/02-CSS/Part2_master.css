@@ -6,10 +6,9 @@ body{
 
 div{
   background: blue;
-  border: orange;
-  border-width: thick; /* 10 px */
-  border-style: dotted;
-
+  border: orange thick dashed;
+  /* border-width: thick; /* 10 px */
+  /* border-style: dotted; */
   }
 
 p{

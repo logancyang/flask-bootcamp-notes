@@ -188,11 +188,126 @@ Note that `<submit>`'s value is just the string shown on the submit button.
 
 Once hit submit, the URL will be updated and a part in the format `?name=value&name=value&name=value` will be appended.
 
-## CSS
+## CSS Crash Course
 
 CSS = Cascading Style Sheet
 
+CSS controls the color, background, borders and much more.
 
+1. Create a `.css` file
+2. Use CSS syntax to link element tags
+3. Add style name-value pairs
+4. Connect CSS to HTML
+
+### 1. Colors
+
+Example: (from Part1_master/css)
+
+```
+/*Colors can be names, or codes*/
+
+h1{
+  color: blue;
+}
+
+li {
+  color: rgb(0,200,0);
+}
+
+/*Search Google for hex color, it has a hex color picker*/
+p{
+  color: #000000;
+}
+
+/*a is alpha, controls transparency, 1 is fully opaque, 0 fully transparent*/
+h4{
+  color: rgba(13,90,140,0.5)
+}
+```
+
+The general format is shown below, don't forget the `;`
+
+```
+Selected Tag {
+  property: value;
+}
+```
+
+To link the CSS file to HTML, add the following in the `<head>` section to the HTML.
+
+```
+<link rel="stylesheet" href="Part1_master.css">
+```
+
+`rel` is the relationship attribute of the link, it says the CSS is a `stylesheet` of the HTML.
+
+`href` points to the path of the CSS file.
+
+The final result is shown below.
+
+<img src="./img/css1.png" alt="oops! image is not found" title="CSS example 1" width="300"/>
+
+### 2. Backgrounds and Borders
+
+Example: (from Part2_master.css)
+
+<img src="./img/css_html2.png" alt="oops! image is not found" title="CSS example 2 HTML" height="320" width="400"/>
+
+<img src="./img/css_code2.png" alt="oops! image is not found" title="CSS example 2 Code" height="320" width="400"/>
+
+`background` can be an url to an image, set `no-repeat` to avoid tiling. `background-repeat` can be `repeat-x` or `repeat-y` for x and y axis only.
+
+For `border`, `border-style` and `border-width` are required attributes. Use one line to avoid 3
+
+```
+border: orange 10px dashed;
+```
+
+Final result:
+
+<img src="./img/css2.png" alt="oops! image is not found" title="CSS example 2" width="600"/>
+
+### 3. `class` and `id`: CSS Selector
+
+**This is the most important one for CSS. We can select by `id` or `class`.**
+
+Every HTML element can accept a `class` or `id` attribute. CSS can link to them by
+
+- `.` for `class`
+- `#` for `id`
+
+**`class`s are for styling multiple different elements.**
+
+**`id`s are for a single and unique element.**
+
+Example: from CSS Part3
+
+<img src="./img/css_html3.png" alt="oops! image is not found" title="CSS example 3 HTML" height="320" width="400"/>
+
+<img src="./img/css_code3.png" alt="oops! image is not found" title="CSS example 3 Code" height="320" width="400"/>
+
+Later, Bootstap will define classes for us.
+
+**To summarize, CSS can style the HTML based on tags, classes and ids.**
+
+### 4. Inspect Elements in Browser
+
+In Chrome we can inspect the HTML and CSS in the developer tool. We can even edit it locally to see changes. For example, open Google and change it's styling locally.
+
+To go back to the original site, just hit refresh.
+
+### 5. Fonts
+
+Not every font is available on each OS. Mac, Windows and Linux have different fonts.
+
+Use [Google Fonts API](https://fonts.google.com/) to change fonts.
+
+1. Add a link to Google fonts API in the HTML
+2. Add the name for the `font-family` from Google Fonts API.
+
+You can get the link and name from the Google Fonts webpage.
+
+Example: look at CSS Part5 files
 
 ## Bootstrap 4
 
