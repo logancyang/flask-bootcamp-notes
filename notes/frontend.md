@@ -16,7 +16,7 @@ Flask is a middle man between the frontend UI and the database backend.
 
 We will use Jinja templates to grab information from Python and Flask to send as HTML.
 
-[pic_flask_and_frontend_jinja]
+<img src="./img/flask_architecture.png" alt="oops! image is not found" title="flask architecture" width="550"/>
 
 ## HTML quick reference
 
@@ -76,7 +76,7 @@ Note that `<img>` is a self closing tag but `<a>` is not.
 
 Consist of `<form>` and `<input>` tags.
 
-Example 1
+Example 1 (from code example Forms Basics)
 
 ```
 <form>
@@ -96,9 +96,11 @@ Example 1
 </form>
 ```
 
-The `email` input type will let the browser check if it's a valid email with `@`.
+<img src="./img/form_basics.png" alt="oops! image is not found" title="form basics" width="400"/>
 
-The `password` type hides the input in the box.
+The `email` input type will let the browser check if it's a valid email with `@`. `value` is prefilled.
+
+The `password` type hides the input in the box. `value` is what's prefilled and hidden.
 
 The `submit` type is a button where `value` has the text shown on the button.
 
@@ -108,9 +110,9 @@ The `color` type is interesting but not commonly used, it lets you select from a
 
 `POST` submits data to be processed.
 
-Forms must set label for each text box in order to let the user see which field is which in the UI. The `for` in `<label>` must match the `id` in `<input>` to label the input properly.
+Forms must set label for each text box in order to let the user see which field is which **in the UI**. The `for` in `<label>` must match the `id` in `<input>` to label the input properly.
 
-Example:
+Example: (from example Form Labels)
 
 ```
 <!-- Upon submitting the form will perform the action (a redirect) -->
@@ -135,15 +137,21 @@ Example:
     </form>
 ```
 
+<img src="./img/form_labels.png" alt="oops! image is not found" title="form labels" width="600"/>
+
 `action` is the action that gets triggered upon form submission. Making it an URL is a redirect.
 
-`value` in the text input type tag is a pre-populated string that is shown in the text input box before typing. It is also the value that actually gets submitted for the field. `placeholder` is a hint to the user when the field is empty and it is greyed out.
+`value` in the text input type tag is a pre-populated string that is shown in the text input box before typing. It is also the value that actually gets submitted for the field.
+
+`placeholder` is a hint to the user when the field is empty and it is greyed out.
+
+For type "password", `value` is prefilled and hidden, `placeholder` is a hint without actual filled value and is not hidden.
 
 #### Form Selections
 
 When two input `radio` buttons share the same `name`, only one can be selected.
 
-Example:
+Example: (from example form seletions)
 
 ```
         <form method="get">
@@ -169,6 +177,8 @@ Example:
 
         </form>
 ```
+
+<img src="./img/form_selections.png" alt="oops! image is not found" title="form selections" width="600"/>
 
 `<select>` gives a dropdown selection of `<option>`s. Each option has a `value`. The `value` of the option selected will be assigned to `name` (variable name) of the `<select>` and the backend can see `name = value` for this dropdown.
 
