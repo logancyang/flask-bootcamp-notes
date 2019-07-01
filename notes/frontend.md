@@ -311,4 +311,78 @@ Example: look at CSS Part5 files
 
 ## Bootstrap 4
 
-TBD
+What is Bootstrap?
+
+Conceptually, Bootstrap is a really large CSS file + a really large JS file.
+
+Check out the [documentation](https://getbootstrap.com/docs/4.3/getting-started/introduction/) and [templates](https://getbootstrap.com/docs/4.3/examples/)
+
+[This](https://getbootstrap.com/docs/4.3/examples/dashboard/) is a template for a dashboard.
+
+<img src="./img/bootstrap_dashboard.png" alt="oops! image is not found" title="Bootstrap Dashboard" width="400"/>
+
+Key concepts: bootstrap components and classes
+
+- Linking Bootstrap
+- Containers
+- Jumbotrons
+- Buttons
+
+### 1. Buttons
+
+In the `<head>` section in the HTML,
+
+- Copy and paste the CSS link
+
+`<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">`
+
+- Copy and paste the jQuery link
+
+```
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+```
+
+Add containers next. The containers are responsive and can self-adjust the position based on browser size on different devices.
+
+Then add a button. Go to Bootstrap -> components -> buttons, copy and paste the code there, mainly need the class names e.g. `btn btn-primary`.
+
+```
+<button class="btn btn-success btn-lg active" type="button" name="button">Button</button>
+```
+
+Same for other components. Be comfortable searching the [Component](https://getbootstrap.com/docs/4.3/components/buttons/) section and copy paste around.
+
+<img src="./img/bootstrap_buttons.png" alt="oops! image is not found" title="Bootstrap Buttons" width="600"/>
+
+#### Class `jumbotron`
+
+A showcase message for the website.
+
+Example:
+
+```
+<!-- JumboTron -->
+  <div class="container">
+
+
+    <div class="jumbotron">
+      <!-- <div class="container"> -->
+
+
+      <h1 class="display-3">Hello, world!</h1>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+        featured content or information.</p>
+      <hr class="my-2">
+      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg " href="#" role="button">Learn more</a>
+      </p>
+      <!-- </div> -->
+    </div>
+  </div>
+```
+
+<img src="./img/bootstrap_jumbotron.png" alt="oops! image is not found" title="Bootstrap Jumbotron" width="500"/>
+
