@@ -2,7 +2,32 @@
 
 (course by Jose Portilla on Udemy)
 
-## Overview
+<!-- vscode-markdown-toc -->
+* 1. [Overview](#Overview)
+* 2. [HTML quick reference](#HTMLquickreference)
+	* 2.1. [Basic tags, list, div, span, attribute](#Basictagslistdivspanattribute)
+		* 2.1.1. [HTML Attributes](#HTMLAttributes)
+	* 2.2. [HTML Forms](#HTMLForms)
+		* 2.2.1. [Form Selections](#FormSelections)
+* 3. [CSS Crash Course](#CSSCrashCourse)
+	* 3.1. [Colors](#Colors)
+	* 3.2. [Backgrounds and Borders](#BackgroundsandBorders)
+	* 3.3. [`class` and `id`: CSS Selector](#classandid:CSSSelector)
+	* 3.4. [Inspect Elements in Browser](#InspectElementsinBrowser)
+	* 3.5. [Fonts](#Fonts)
+* 4. [Bootstrap 4](#Bootstrap4)
+	* 4.1. [Buttons](#Buttons)
+		* 4.1.1. [Class `jumbotron`](#Classjumbotron)
+	* 4.2. [Forms](#Forms)
+	* 4.3. [Navbar](#Navbar)
+
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
+##  1. <a name='Overview'></a>Overview
 
 Flask is a super simple Python web framework and is also scalable with a lot of 3rd party libraries. Choosing Flask rather than
 NodeJS because Python has nice ecosystem in machine learning. What Flask does in general:
@@ -18,11 +43,11 @@ We will use Jinja templates to grab information from Python and Flask to send as
 
 <img style="border:10px solid white; display:block; margin-left: auto; margin-right: auto;" src="./img/flask_architecture.png" alt="oops! image is not found" title="flask architecture" width="550"/>
 
-## HTML quick reference
+##  2. <a name='HTMLquickreference'></a>HTML quick reference
 
 `<!DOCTYPE html>` tells it's an html file. `<head>` contains metadata, title on the tab and links to javascript, `<body>` contains content such as forms, styles, headers, etc.
 
-### Basic tags, list, div, span, attribute
+###  2.1. <a name='Basictagslistdivspanattribute'></a>Basic tags, list, div, span, attribute
 
 `<h1>`: heading one
 
@@ -60,7 +85,7 @@ Lists can be nested.
 
 for doing styling on `myclass`.
 
-#### HTML Attributes
+####  2.1.1. <a name='HTMLAttributes'></a>HTML Attributes
 
 `<img src="<link to image>" alt="Uh oh! No image">`
 
@@ -72,7 +97,7 @@ Again, `<some url>` can be an URL online or a path to another html file locally.
 
 Note that `<img>` is a self closing tag but `<a>` is not.
 
-### HTML Forms
+###  2.2. <a name='HTMLForms'></a>HTML Forms
 
 Consist of `<form>` and `<input>` tags.
 
@@ -147,7 +172,7 @@ Example: (from example Form Labels)
 
 For type "password", `value` is prefilled and hidden, `placeholder` is a hint without actual filled value and is not hidden.
 
-#### Form Selections
+####  2.2.1. <a name='FormSelections'></a>Form Selections
 
 When two input `radio` buttons share the same `name`, only one can be selected.
 
@@ -188,7 +213,7 @@ Note that `<submit>`'s value is just the string shown on the submit button.
 
 Once hit submit, the URL will be updated and a part in the format `?name=value&name=value&name=value` will be appended.
 
-## CSS Crash Course
+##  3. <a name='CSSCrashCourse'></a>CSS Crash Course
 
 CSS = Cascading Style Sheet
 
@@ -199,7 +224,7 @@ CSS controls the color, background, borders and much more.
 3. Add style name-value pairs
 4. Connect CSS to HTML
 
-### 1. Colors
+###  3.1. <a name='Colors'></a>Colors
 
 Example: (from Part1_master/css)
 
@@ -247,7 +272,7 @@ The final result is shown below.
 
 <img style="border:10px solid white; display:block; margin-left: auto; margin-right: auto;" src="./img/css1.png" alt="oops! image is not found" title="CSS example 1" width="300"/>
 
-### 2. Backgrounds and Borders
+###  3.2. <a name='BackgroundsandBorders'></a>Backgrounds and Borders
 
 Example: (from Part2_master.css)
 
@@ -267,7 +292,7 @@ Final result:
 
 <img style="border:10px solid white; display:block; margin-left: auto; margin-right: auto;" src="./img/css2.png" alt="oops! image is not found" title="CSS example 2" width="600"/>
 
-### 3. `class` and `id`: CSS Selector
+###  3.3. <a name='classandid:CSSSelector'></a>`class` and `id`: CSS Selector
 
 **This is the most important one for CSS. We can select by `id` or `class`.**
 
@@ -290,13 +315,13 @@ Later, Bootstap will define classes for us.
 
 **To summarize, CSS can style the HTML based on tags, classes and ids.**
 
-### 4. Inspect Elements in Browser
+###  3.4. <a name='InspectElementsinBrowser'></a>Inspect Elements in Browser
 
 In Chrome we can inspect the HTML and CSS in the developer tool. We can even edit it locally to see changes. For example, open Google and change it's styling locally.
 
 To go back to the original site, just hit refresh.
 
-### 5. Fonts
+###  3.5. <a name='Fonts'></a>Fonts
 
 Not every font is available on each OS. Mac, Windows and Linux have different fonts.
 
@@ -309,11 +334,11 @@ You can get the link and name from the Google Fonts webpage.
 
 Example: look at CSS Part5 files
 
-## Bootstrap 4
+##  4. <a name='Bootstrap4'></a>Bootstrap 4
 
 Bootstrap is a CSS framework originally developed at Twitter for internal use. It was open sourced in 2011 and became one of the most starred projects on Github.
 
-#### What is Bootstrap?
+####  <a name='WhatisBootstrap'></a>What is Bootstrap?
 
 Conceptually, Bootstrap is a really large CSS file + a really large JS file.
 
@@ -330,7 +355,7 @@ Key concepts: bootstrap components and classes
 - Jumbotrons
 - Buttons
 
-### 1. Buttons
+###  4.1. <a name='Buttons'></a>Buttons
 
 In the `<head>` section in the HTML,
 
@@ -358,7 +383,7 @@ Same for other components. Be comfortable searching the [Component](https://getb
 
 <img style="border:10px solid white; display:block; margin-left: auto; margin-right: auto;" src="./img/bootstrap_buttons.png" alt="oops! image is not found" title="Bootstrap Buttons" width="600"/>
 
-#### Class `jumbotron`
+####  4.1.1. <a name='Classjumbotron'></a>Class `jumbotron`
 
 A showcase message for the website.
 
@@ -388,7 +413,7 @@ Example:
 
 <img style="border:10px solid white; display:block; margin-left: auto; margin-right: auto;" src="./img/bootstrap_jumbotron.png" alt="oops! image is not found" title="Bootstrap Jumbotron" width="500"/>
 
-### 2. Forms
+###  4.2. <a name='Forms'></a>Forms
 
 In `<head>` include
 
@@ -406,7 +431,7 @@ Bootstrap 4 makes forms look really well.
 
 All of these form components such as **email submission, password, dropdown select, multiple select, text area, file upload, radio button, check button** should use proper `div`, `select` and `input` with bootstrap class names. Refer to `Part2_Forms.html` for actual HTML code for each component.
 
-### 3. Navbar
+###  4.3. <a name='Navbar'></a>Navbar
 
 HTML tag `<nav>` creates a navigation bar. Bootstrap classes can be added to it to add styling and functionality. It even makes it a dropdown menu on small screens of mobile devices.
 
@@ -424,7 +449,7 @@ The reason is that the `slim` version of jQuery from Bootstrap sometimes has pro
 Check the [documentation](https://getbootstrap.com/docs/4.3/components/navbar/) for further customizations as needed.
 
 
-### THE END
+###  <a name='THEEND'></a>THE END
 
 THIS IS A QUICK CRASH COURSE FOR HTML, CSS AND BOOTSTRAP.
 
