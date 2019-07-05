@@ -16,7 +16,7 @@ Flask is a middle man between the frontend UI and the database backend.
 
 We will use Jinja templates to grab information from Python and Flask to send as HTML.
 
-<img src="./img/flask_architecture.png" alt="oops! image is not found" title="flask architecture" width="550"/>
+<img style="border:10px solid white; display:block; margin-left: auto; margin-right: auto;" src="./img/flask_architecture.png" alt="oops! image is not found" title="flask architecture" width="550"/>
 
 ## HTML quick reference
 
@@ -96,7 +96,7 @@ Example 1 (from code example Forms Basics)
 </form>
 ```
 
-<img src="./img/form_basics.png" alt="oops! image is not found" title="form basics" width="400"/>
+<img style="border:10px solid white; display:block; margin-left: auto; margin-right: auto;" src="./img/form_basics.png" alt="oops! image is not found" title="form basics" width="400"/>
 
 The `email` input type will let the browser check if it's a valid email with `@`. `value` is prefilled.
 
@@ -137,7 +137,7 @@ Example: (from example Form Labels)
     </form>
 ```
 
-<img src="./img/form_labels.png" alt="oops! image is not found" title="form labels" width="600"/>
+<img style="border:10px solid white; display:block; margin-left: auto; margin-right: auto;" src="./img/form_labels.png" alt="oops! image is not found" title="form labels" width="600"/>
 
 `action` is the action that gets triggered upon form submission. Making it an URL is a redirect.
 
@@ -178,7 +178,7 @@ Example: (from example form seletions)
         </form>
 ```
 
-<img src="./img/form_selections.png" alt="oops! image is not found" title="form selections" width="600"/>
+<img style="border:10px solid white; display:block; margin-left: auto; margin-right: auto;" src="./img/form_selections.png" alt="oops! image is not found" title="form selections" width="600"/>
 
 `<select>` gives a dropdown selection of `<option>`s. Each option has a `value`. The `value` of the option selected will be assigned to `name` (variable name) of the `<select>` and the backend can see `name = value` for this dropdown.
 
@@ -245,7 +245,7 @@ To link the CSS file to HTML, add the following in the `<head>` section to the H
 
 The final result is shown below.
 
-<img src="./img/css1.png" alt="oops! image is not found" title="CSS example 1" width="300"/>
+<img style="border:10px solid white; display:block; margin-left: auto; margin-right: auto;" src="./img/css1.png" alt="oops! image is not found" title="CSS example 1" width="300"/>
 
 ### 2. Backgrounds and Borders
 
@@ -265,7 +265,7 @@ border: orange 10px dashed;
 
 Final result:
 
-<img src="./img/css2.png" alt="oops! image is not found" title="CSS example 2" width="600"/>
+<img style="border:10px solid white; display:block; margin-left: auto; margin-right: auto;" src="./img/css2.png" alt="oops! image is not found" title="CSS example 2" width="600"/>
 
 ### 3. `class` and `id`: CSS Selector
 
@@ -311,7 +311,9 @@ Example: look at CSS Part5 files
 
 ## Bootstrap 4
 
-What is Bootstrap?
+Bootstrap is a CSS framework originally developed at Twitter for internal use. It was open sourced in 2011 and became one of the most starred projects on Github.
+
+#### What is Bootstrap?
 
 Conceptually, Bootstrap is a really large CSS file + a really large JS file.
 
@@ -319,7 +321,7 @@ Check out the [documentation](https://getbootstrap.com/docs/4.3/getting-started/
 
 [This](https://getbootstrap.com/docs/4.3/examples/dashboard/) is a template for a dashboard.
 
-<img src="./img/bootstrap_dashboard.png" alt="oops! image is not found" title="Bootstrap Dashboard" width="400"/>
+<img style="border:10px solid white; display:block; margin-left: auto; margin-right: auto;" src="./img/bootstrap_dashboard.png" alt="oops! image is not found" title="Bootstrap Dashboard" width="400"/>
 
 Key concepts: bootstrap components and classes
 
@@ -354,7 +356,7 @@ Then add a button. Go to Bootstrap -> components -> buttons, copy and paste the 
 
 Same for other components. Be comfortable searching the [Component](https://getbootstrap.com/docs/4.3/components/buttons/) section and copy paste around.
 
-<img src="./img/bootstrap_buttons.png" alt="oops! image is not found" title="Bootstrap Buttons" width="600"/>
+<img style="border:10px solid white; display:block; margin-left: auto; margin-right: auto;" src="./img/bootstrap_buttons.png" alt="oops! image is not found" title="Bootstrap Buttons" width="600"/>
 
 #### Class `jumbotron`
 
@@ -384,5 +386,50 @@ Example:
   </div>
 ```
 
-<img src="./img/bootstrap_jumbotron.png" alt="oops! image is not found" title="Bootstrap Jumbotron" width="500"/>
+<img style="border:10px solid white; display:block; margin-left: auto; margin-right: auto;" src="./img/bootstrap_jumbotron.png" alt="oops! image is not found" title="Bootstrap Jumbotron" width="500"/>
+
+### 2. Forms
+
+In `<head>` include
+
+```
+    <!-- Bootstrap CSS, JS, and jQuery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+```
+
+Bootstrap 4 makes forms look really well.
+
+<img style="border:10px solid white; display:block; margin-left: auto; margin-right: auto;" src="./img/bootstrap_forms.png" alt="oops! image is not found" title="Bootstrap Forms" width="800"/>
+
+All of these form components such as **email submission, password, dropdown select, multiple select, text area, file upload, radio button, check button** should use proper `div`, `select` and `input` with bootstrap class names. Refer to `Part2_Forms.html` for actual HTML code for each component.
+
+### 3. Navbar
+
+HTML tag `<nav>` creates a navigation bar. Bootstrap classes can be added to it to add styling and functionality. It even makes it a dropdown menu on small screens of mobile devices.
+
+Refer to `Part3_Navbar.html` for code examples. One thing to note is that we need jQuery `uncompressed` or `minified`, not `slim` or `slim minified` as in Bootstrap. Go to the [jQuery](https://code.jquery.com/) website and get the link for `minified`
+
+```
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+```
+
+The reason is that the `slim` version of jQuery from Bootstrap sometimes has problems for the collapse functionality for certain browsers.
+
+Check the [documentation](https://getbootstrap.com/docs/4.3/components/navbar/) for further customizations as needed.
+
+
+### THE END
+
+THIS IS A QUICK CRASH COURSE FOR HTML, CSS AND BOOTSTRAP.
+
+FOR FURTHER **FRONTEND** KNOWLEDGE, CHECK OUT THE FOLLOWING UDEMY COURSES
+
+- [The Complete Web Developer in 2019: Zero to Mastery](https://www.udemy.com/the-complete-web-developer-zero-to-mastery/) by [Andrei Neagoie](https://twitter.com/AndreiNeagoie)
+- [React - The Complete Guide (incl Hooks, React Router, Redux)](https://www.udemy.com/react-the-complete-guide-incl-redux/) by [Maximilian Schwarzmüller](https://twitter.com/maxedapps?lang=en)
 
