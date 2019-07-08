@@ -79,7 +79,7 @@ Lists can be nested.
 
 `<div>` is for larger division/block of elements, `<span>` is for substring such as
 
-```
+```html
 <p>Here is <span class='myclass'>some text</span>. woohoo! </p>
 ```
 
@@ -103,7 +103,7 @@ Consist of `<form>` and `<input>` tags.
 
 Example 1 (from code example Forms Basics)
 
-```
+```html
 <form>
 
     <h1>Log In</h1>
@@ -139,7 +139,7 @@ Forms must set label for each text box in order to let the user see which field 
 
 Example: (from example Form Labels)
 
-```
+```html
 <!-- Upon submitting the form will perform the action (a redirect) -->
     <form action="http://www.google.com" method="get">
 
@@ -178,7 +178,7 @@ When two input `radio` buttons share the same `name`, only one can be selected.
 
 Example: (from example form seletions)
 
-```
+```html
         <form method="get">
           <h3>Do you already own a dog?</h3>
           <label for="yes">Yes</label>
@@ -228,7 +228,7 @@ CSS controls the color, background, borders and much more.
 
 Example: (from Part1_master/css)
 
-```
+```css
 /*Colors can be names, or codes*/
 
 h1{
@@ -252,7 +252,7 @@ h4{
 
 The general format is shown below, don't forget the `;`
 
-```
+```css
 Selected Tag {
   property: value;
 }
@@ -260,7 +260,7 @@ Selected Tag {
 
 To link the CSS file to HTML, add the following in the `<head>` section to the HTML.
 
-```
+```html
 <link rel="stylesheet" href="Part1_master.css">
 ```
 
@@ -284,7 +284,7 @@ Example: (from Part2_master.css)
 
 For `border`, `border-style` and `border-width` are required attributes. Use one line to avoid 3
 
-```
+```css
 border: orange 10px dashed;
 ```
 
@@ -365,7 +365,7 @@ In the `<head>` section in the HTML,
 
 - Copy and paste the jQuery link
 
-```
+```html
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -375,7 +375,7 @@ Add containers next. The containers are responsive and can self-adjust the posit
 
 Then add a button. Go to Bootstrap -> components -> buttons, copy and paste the code there, mainly need the class names e.g. `btn btn-primary`.
 
-```
+```html
 <button class="btn btn-success btn-lg active" type="button" name="button">Button</button>
 ```
 
@@ -389,7 +389,7 @@ A showcase message for the website.
 
 Example:
 
-```
+```html
 <!-- JumboTron -->
   <div class="container">
 
@@ -417,7 +417,7 @@ Example:
 
 In `<head>` include
 
-```
+```html
     <!-- Bootstrap CSS, JS, and jQuery -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -437,7 +437,7 @@ HTML tag `<nav>` creates a navigation bar. Bootstrap classes can be added to it 
 
 Refer to `Part3_Navbar.html` for code examples. One thing to note is that we need jQuery `uncompressed` or `minified`, not `slim` or `slim minified` as in Bootstrap. Go to the [jQuery](https://code.jquery.com/) website and get the link for `minified`
 
-```
+```html
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

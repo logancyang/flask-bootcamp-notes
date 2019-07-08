@@ -22,7 +22,7 @@ class Puppy(db.Model):
 
     __tablename__ = 'puppies'
 
-    id = db.Column(db.Integer,primary_key = True)
+    id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.Text)
     # This is a one-to-many relationship
     # A puppy can have many toys
@@ -47,13 +47,13 @@ class Puppy(db.Model):
         print("Here are my toys!")
         for toy in self.toys:
             print(toy.item_name)
-        
+
 
 class Toy(db.Model):
 
     __tablename__ = 'toys'
 
-    id = db.Column(db.Integer,primary_key = True)
+    id = db.Column(db.Integer, primary_key=True)
     item_name = db.Column(db.Text)
     # Connect the toy to the puppy that owns it.
     # We use puppies.id because __tablename__='puppies'
@@ -68,7 +68,7 @@ class Owner(db.Model):
 
     __tablename__ = 'owners'
 
-    id = db.Column(db.Integer,primary_key= True)
+    id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.Text)
     # We use puppies.id because __tablename__='puppies'
     puppy_id = db.Column(db.Integer,db.ForeignKey('puppies.id'))
